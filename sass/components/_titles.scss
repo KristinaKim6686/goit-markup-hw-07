@@ -1,0 +1,28 @@
+.main__title {
+  color: $accent--text;
+  font-weight: 900;
+  font-size: 44px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 696px;
+  margin: 0 auto;
+  letter-spacing: 0.06em;
+}
+.section__title {
+  font-size: 36px;
+  line-height: 1.17;
+  color: $title--color;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.hidden__title {
+  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  margin: -1px;
+  border: 0;
+  pad: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

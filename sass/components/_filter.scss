@@ -1,0 +1,128 @@
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  color: var(--primary-text-color);
+}
+.buttons {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  color: var(--title-text-color);
+  border-radius: 4px;
+  min-width: 73px;
+  height: 38px;
+  background-color: $secondary--background;
+  text-align: center;
+  border: none;
+  padding: 6px 22px 6px 22px;
+  transition: box-shadow $cubik 250ms, background-color $cubik 250ms,
+    color $cubik 250ms;
+}
+.buttons :active {
+  cursor: pointer;
+  background-color: $accent--color;
+  color: $accent--text;
+  transition: box-shadow $cubik 250ms;
+}
+.buttons:focus,
+.buttons:hover {
+  background-color: $accent--color;
+  color: $accent--text;
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.12), 0px 1px rgba(0, 0, 0, 0.08),
+    0px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 2px 2px 1px;
+}
+.filter :not(:last-child) {
+  margin-right: 8px;
+}
+.current__button {
+  color: $accent--text;
+  background-color: $accent--color;
+  min-width: 73px;
+  height: 38px;
+  text-align: center;
+  border-radius: 4px;
+  padding: 6px 22px 6px 22px;
+  margin-right: 8px;
+  border: none;
+}
+.current__button:focus,
+.current__button:hover {
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.12), 0px 1px rgba(0, 0, 0, 0.08),
+    0px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 2px 2px 1px;
+}
+.filter__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+.card__thumb {
+  position: relative;
+  overflow: hidden;
+}
+.filter__item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc(100% / 3 - 32px);
+  transition: box-shadow $cubik 250ms;
+}
+.filter__item:hover .overlay,
+.filter__item:focus .overlay {
+  transform: translateY(0);
+}
+.filter__item:focus,
+.filter__item:hover {
+  box-shadow: 0px 2px rgba(0, 0, 0, 0.12), 0px 1px rgba(0, 0, 0, 0.08),
+    0px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 2px 2px 1px;
+  border-radius: 6px 4px 1px;
+  box-shadow: 1px 4px rgba(0, 0, 0, 0.16), 0px 4px rgba(0, 0, 0, 0.06),
+    0px 1px rgba(0, 0, 0, 0.12);
+}
+
+.filter__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: $title--color;
+  cursor: pointer;
+  width: 322px;
+}
+.filter__title:focus,
+.filter__title:hover {
+  cursor: pointer;
+}
+.filter__text {
+  line-height: 1.875;
+  color: $text--color;
+  background: #ffffff;
+  font-size: 16px;
+  padding: 20px 24px 20px 24px;
+  width: 370px;
+  border: 1px solid #eeeeee;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: $accent--text;
+  font-size: 18px;
+  line-height: 1.555;
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  opacity: 1;
+  transform: translateY(100%);
+  transition: transform $cubik 250ms;
+}
+.overlay:focus,
+.overlay:hover {
+  opacity: 0.9;
+}

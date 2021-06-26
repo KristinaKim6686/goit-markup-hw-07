@@ -1,0 +1,42 @@
+footer {
+  background-color: var(--secondary-background-color);
+}
+.address__section {
+  margin-right: 70px;
+}
+.footer__studio {
+  color: $accent--color;
+}
+.footer__logo {
+  color: $accent--color;
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  margin-bottom: 20px;
+}
+.address {
+  color: $accent--text;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.address__contacts {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 9px;
+}
+.join {
+  font-weight: 700;
+  color: var(--accent-text-color);
+  line-height: 1.172px;
+}
+
+.subscribe {
+  margin-left: auto;
+  align-items: center;
+}
+.subscribe__title {
+  font-weight: 700;
+  color: var(--accent-text-color);
+  text-transform: uppercase;
+}
