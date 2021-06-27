@@ -1,9 +1,10 @@
 .projects {
   display: flex;
+  & :not(:last-child) {
+    margin-right: $main--margin;
+  }
 }
-.projects :not(:last-child) {
-  margin-right: $main--margin;
-}
+
 .label__thumb {
   position: relative;
 }

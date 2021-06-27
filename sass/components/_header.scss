@@ -1,11 +1,10 @@
-header .container {
+header {
   background-color: $accent--text;
-  border-bottom: 1px solid #ececec;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1200px;
   padding: 0 15px;
+  border-bottom: 1px solid #ececec;
 }
 .nav {
   font-weight: 500;
@@ -25,7 +24,7 @@ header .container {
   margin-right: 50px;
   padding: 24px 0 24px 0;
 
-  &studio {
+  &__studio {
     color: $title--color;
   }
 }
@@ -47,17 +46,18 @@ header .container {
 }
 .current {
   position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 25px;
+    background-color: $accent--color;
+  }
 }
-.current::after {
-  position: absolute;
-  content: "";
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  border-radius: 25px;
-  background-color: var(--accent-color);
-}
+
 .contacts {
   font-weight: 500;
   font-size: 14px;
@@ -68,32 +68,30 @@ header .container {
 .contacts__icons {
   margin-right: 10px;
 }
-.contacts :not(:last-child) {
-  margin-right: 50px;
-}
 .contact__link {
   display: flex;
   align-items: center;
   padding-bottom: 32px;
   padding-top: 32px;
   transition: color $cubik 250ms, fill $cubik 250ms;
-}
-.contact__link:focus,
-.contact__link:hover {
-  color: $accent--color;
+  margin-right: 10px;
+
+  &:focus,
+  &:hover {
+    color: $accent--color;
+  }
 }
 .contact__icons {
   fill: currentColor;
   margin-right: 10px;
+
+  &:focus,
+  &:hover {
+    fill: currentColor;
+    stroke: currentColor;
+  }
 }
-.contact__icons:focus,
-.contact__icons:hover {
-  fill: currentColor;
-  stroke: currentColor;
-}
-.contact__icons {
-  margin-right: 10px;
-}
+
 .envelope,
 .phone {
   margin-right: 10px;

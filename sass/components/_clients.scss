@@ -13,15 +13,16 @@
   justify-content: center;
   align-items: center;
   transition: fill var(--cubik) 250ms, border $cubik 250ms;
+
+  &:focus,
+  &:hover {
+    fill: #2196f3;
+    border: 1px solid;
+    border-color: #2196f3;
+  }
 }
 .client__icons {
   content: "";
   outline: none;
   color: inherit;
-}
-.clients__list a:focus,
-.clients__list a:hover {
-  fill: #2196f3;
-  border: 1px solid;
-  border-color: #2196f3;
 }

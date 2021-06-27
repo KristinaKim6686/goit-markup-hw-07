@@ -19,6 +19,15 @@
   padding: 6px 22px 6px 22px;
   transition: box-shadow $cubik 250ms, background-color $cubik 250ms,
     color $cubik 250ms;
+
+  &:focus,
+  &:hover {
+    background-color: $accent--color;
+    color: $accent--text;
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.12), 0px 1px rgba(0, 0, 0, 0.08),
+      0px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 2px 2px 1px;
+  }
 }
 .buttons :active {
   cursor: pointer;
@@ -26,14 +35,7 @@
   color: $accent--text;
   transition: box-shadow $cubik 250ms;
 }
-.buttons:focus,
-.buttons:hover {
-  background-color: $accent--color;
-  color: $accent--text;
-  box-shadow: 0px 2px rgba(0, 0, 0, 0.12), 0px 1px rgba(0, 0, 0, 0.08),
-    0px 3px rgba(0, 0, 0, 0.1);
-  border-radius: 2px 2px 1px;
-}
+
 .filter :not(:last-child) {
   margin-right: 8px;
 }
@@ -47,13 +49,14 @@
   padding: 6px 22px 6px 22px;
   margin-right: 8px;
   border: none;
+  &:focus,
+  &:hover {
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.12), 0px 1px rgba(0, 0, 0, 0.08),
+      0px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 2px 2px 1px;
+  }
 }
-.current__button:focus,
-.current__button:hover {
-  box-shadow: 0px 2px rgba(0, 0, 0, 0.12), 0px 1px rgba(0, 0, 0, 0.08),
-    0px 3px rgba(0, 0, 0, 0.1);
-  border-radius: 2px 2px 1px;
-}
+
 .filter__list {
   display: flex;
   flex-wrap: wrap;
@@ -69,19 +72,20 @@
   margin-bottom: 30px;
   flex-basis: calc(100% / 3 - 32px);
   transition: box-shadow $cubik 250ms;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.12), 0px 1px rgba(0, 0, 0, 0.08),
+      0px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 2px 2px 1px;
+    border-radius: 6px 4px 1px;
+    box-shadow: 1px 4px rgba(0, 0, 0, 0.16), 0px 4px rgba(0, 0, 0, 0.06),
+      0px 1px rgba(0, 0, 0, 0.12);
+  }
 }
 .filter__item:hover .overlay,
 .filter__item:focus .overlay {
   transform: translateY(0);
-}
-.filter__item:focus,
-.filter__item:hover {
-  box-shadow: 0px 2px rgba(0, 0, 0, 0.12), 0px 1px rgba(0, 0, 0, 0.08),
-    0px 3px rgba(0, 0, 0, 0.1);
-  border-radius: 2px 2px 1px;
-  border-radius: 6px 4px 1px;
-  box-shadow: 1px 4px rgba(0, 0, 0, 0.16), 0px 4px rgba(0, 0, 0, 0.06),
-    0px 1px rgba(0, 0, 0, 0.12);
 }
 
 .filter__title {
@@ -91,11 +95,13 @@
   color: $title--color;
   cursor: pointer;
   width: 322px;
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+  }
 }
-.filter__title:focus,
-.filter__title:hover {
-  cursor: pointer;
-}
+
 .filter__text {
   line-height: 1.875;
   color: $text--color;
@@ -121,8 +127,9 @@
   opacity: 1;
   transform: translateY(100%);
   transition: transform $cubik 250ms;
-}
-.overlay:focus,
-.overlay:hover {
-  opacity: 0.9;
+
+  &:focus,
+  &:hover {
+    opacity: 0.9;
+  }
 }
