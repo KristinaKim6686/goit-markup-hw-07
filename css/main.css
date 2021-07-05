@@ -63,32 +63,27 @@ body {
 }
 
 header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 1200px;
   padding: 0 15px;
 }
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
   padding: 0 15px 0 15px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 footer .container {
-  display: flex;
-  width: 1200px;
   padding-top: 60px;
   padding-bottom: 60px;
-  align-items: baseline;
+}
+
+.container {
+  min-width: 320px;
+  padding: 0 15px;
+  margin-right: auto;
+  margin-right: auto;
 }
 
 section {
-  padding: 94px 0 94px 0;
+  padding: 60px 0 60px 0;
 }
 
 .section.no-padding {
@@ -99,11 +94,6 @@ section {
 .hero {
   background-color: #2f303a;
   margin: 0 auto;
-  height: 600px;
-  max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-size: 1600px 600px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-img.jpg);
 }
 
@@ -130,21 +120,20 @@ section {
 .main__title {
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  max-width: 696px;
   margin: 0 auto;
   letter-spacing: 0.06em;
+  font-size: 26px;
 }
 
 .section__title {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   color: #212121;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .hidden__title {
@@ -163,13 +152,8 @@ section {
 }
 
 .services {
-  display: flex;
   outline: none;
   padding-bottom: 0;
-}
-
-.service__card:not(:last-child) {
-  margin-right: 30px;
 }
 
 .service__card {
@@ -187,27 +171,22 @@ section {
 
 .service__icon {
   display: block;
-  width: 70px;
-  height: 70px;
+  max-width: 70px;
+  max-height: 70px;
 }
 
 .services__thumb {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
   height: 120px;
-  margin-bottom: 30px;
   background-color: #f5f4fa;
   border-radius: 4px;
-}
-
-.projects {
-  display: flex;
+  margin-bottom: 30px;
 }
 
 .projects :not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .label__thumb {
@@ -218,8 +197,7 @@ section {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 370px;
-  height: 70px;
+  width: 100%;
   font-weight: 700;
   text-align: center;
   justify-content: center;
@@ -234,12 +212,11 @@ section {
 .team {
   font-size: 16px;
   line-height: 1.17;
-  display: flex;
   text-align: center;
 }
 
 .team > :not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .team__section {
@@ -255,7 +232,7 @@ section {
 }
 
 .card__title {
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   background-color: #ffffff;
   overflow: hidden;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -264,10 +241,11 @@ section {
 
 footer {
   background-color: var(--secondary-background-color);
+  text-align: center;
 }
 
 .address__section {
-  margin-right: 70px;
+  margin-bottom: 60px;
 }
 
 .footer__studio {
@@ -277,7 +255,7 @@ footer {
 .footer__logo {
   color: #2196f3;
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.19;
   margin-bottom: 20px;
@@ -285,8 +263,6 @@ footer {
 
 .address {
   color: #ffffff;
-  display: flex;
-  flex-direction: column;
   text-decoration: none;
 }
 
@@ -302,8 +278,8 @@ footer {
 }
 
 .subscribe {
-  margin-left: auto;
   align-items: center;
+  margin-top: 60px;
 }
 
 .subscribe__title {
@@ -653,12 +629,6 @@ header {
 .nav {
   font-weight: 500;
   font-size: 14px;
-  display: flex;
-  align-items: center;
-}
-
-.nav :not(:last-child) {
-  margin-right: 50px;
 }
 
 .logo {
@@ -667,7 +637,6 @@ header {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
-  margin-right: 50px;
   padding: 24px 0 24px 0;
 }
 
@@ -711,7 +680,6 @@ header {
 .contacts {
   font-weight: 500;
   font-size: 14px;
-  display: flex;
   letter-spacing: 0.02em;
   fill: currentColor;
 }
@@ -721,8 +689,6 @@ header {
 }
 
 .contact__link {
-  display: flex;
-  align-items: center;
   padding-bottom: 32px;
   padding-top: 32px;
   transition: color cubic-bezier(0.4, 0, 0.2, 1) 250ms, fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
@@ -758,11 +724,6 @@ header {
   height: 16px;
 }
 
-.clients__list {
-  display: flex;
-  justify-content: space-between;
-}
-
 .clients__list a {
   width: 170px;
   height: 90px;
@@ -789,8 +750,8 @@ header {
 
 .socials {
   display: flex;
-  padding-left: 0px;
   justify-content: center;
+  padding-left: 0px;
   margin-top: 16px;
 }
 
@@ -848,22 +809,13 @@ header {
   margin-top: 20px;
 }
 
-.footer__form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin-top: 20px;
-}
-
 .footer__form input {
-  width: 358px;
-  height: 50px;
   border-radius: 4px;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   outline: none;
   padding: 15px 16px;
+  margin-top: 20px;
 }
 
 .footer__form::placeholder {
@@ -881,7 +833,7 @@ header {
   height: 50px;
   border-radius: 4px;
   border: none;
-  margin-left: 10px;
+  margin: 20px auto 0;
 }
 
 .subscribe__button svg {

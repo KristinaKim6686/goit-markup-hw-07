@@ -9,11 +9,11 @@ header {
 .nav {
   font-weight: 500;
   font-size: 14px;
-  display: flex;
-  align-items: center;
-  & :not(:last-child) {
-    margin-right: 50px;
-  }
+  // display: flex;
+  // align-items: center;
+  // & :not(:last-child) {
+  //   margin-right: 50px;
+  // }
 }
 .logo {
   color: $accent--color;
@@ -21,7 +21,7 @@ header {
   font-size: 26px;
   font-weight: 700;
   line-height: 1.19;
-  margin-right: 50px;
+  // margin-right: 50px;
   padding: 24px 0 24px 0;
 
   &__studio {
@@ -61,7 +61,7 @@ header {
 .contacts {
   font-weight: 500;
   font-size: 14px;
-  display: flex;
+  // display: flex;
   letter-spacing: 0.02em;
   fill: currentColor;
 }
@@ -69,8 +69,8 @@ header {
   margin-right: 10px;
 }
 .contact__link {
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   padding-bottom: 32px;
   padding-top: 32px;
   transition: color $cubik 250ms, fill $cubik 250ms;
