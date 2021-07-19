@@ -1,10 +1,19 @@
-$text--color: #757575;
-$accent--color: #2196f3;
-$title--color: #212121;
-$accent--text: #ffffff;
-$dark--background: #2f303a;
-$secondary--background: #f5f4fa;
-$cubik: cubic-bezier(0.4, 0, 0.2, 1);
-$main--margin: 30px;
-$font: "Roboto", sans-serif;
-$logo--font: "Raleway", sans-serif;
+//fonts
+$basic-font: "DM Sans", sans-serif;
+$title-font: "Titan One", sans-serif;
+
+//accent color
+$accent-color-dark: #d41443;
+$accent-color-light: #ffa5ba;
+
+//text-color
+$primary-text-color: #000000;
+$secondary-text-color: #907e82;
+$white-text-color: #ffffff;
+
+//background
+$background-hero: #ffb8ca;
+$background-light-bg: #fff5f6;
+$background-mobile-menu: #e17992;
+//button
+$button-color-hover: #c7133e;

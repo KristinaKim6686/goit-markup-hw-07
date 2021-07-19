@@ -1,0 +1,123 @@
+.hero__section {
+  background-color: $background-hero;
+
+  @media (max-width: 768px) {
+    background-image: url(../images/icecream-mob-1x.png),
+      url(../images/Ellipse.png);
+    background-size: contain;
+    background-position: right 32px top 36px, right -32px top 27px;
+    background-repeat: no-repeat;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero__section {
+      background-image: url(../images/icecream-mob-2x.png);
+    }
+  }
+  @media (min-width: 768px) {
+    background-image: url(../images/icecream-tab-1x.png),
+      url(../images/Ellipse.png);
+    background-size: contain;
+    background-position: right 247px top 36px, right 137px top 27px;
+    background-repeat: no-repeat;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero__section {
+      background-image: url(../images/icecream-tab-2x.png);
+    }
+  }
+  @media (min-width: 1280px) {
+    background-image: url(../images/icecream-desk-1x.png),
+      url(../images/Ellipse.png);
+    background-size: contain;
+
+    background-position: bottom 0 center, bottom 75px center;
+    background-repeat: no-repeat;
+    overflow: visible;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero__section {
+      background-image: url(../images/icecream-desk-2x.png);
+    }
+  }
+}
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+}
+.description__block {
+  display: flex;
+  flex-direction: column;
+}
+.hero__banner {
+  @media (max-width: 768px) {
+    display: none;
+  }
+  @media (min-width: 768px) {
+    width: 143px;
+  }
+  @media (min-width: 1280px) {
+    width: 236px;
+  }
+}
+.info {
+  display: none;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+.hero__banner {
+  &:focus,
+  &:hover {
+    scale: 1.1;
+  }
+}
+.description {
+  margin-top: 56px;
+  display: flex;
+  margin-bottom: 28px;
+
+  @media (min-width: 1280px) {
+    margin-bottom: 45px;
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+.number {
+  font-family: $title-font;
+  font-size: 28px;
+  color: $accent-color-dark;
+  font-weight: 400;
+  @media (min-width: 1280px) {
+    font-size: 46px;
+  }
+}
+.numbers__list {
+  color: $white-text-color;
+}
+.description__text {
+  width: 200px;
+  color: $white-text-color;
+}
+.main__label {
+  padding-top: 137px;
+  padding-left: 20px;
+}
+.main__title {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+}
+.hero-buttons {
+  display: flex;
+  padding-left: 20px;
+  padding-bottom: 160px;
+}
