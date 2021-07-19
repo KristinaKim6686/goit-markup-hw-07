@@ -13,6 +13,22 @@
     line-height: 0.896;
   }
 }
+.main__label {
+  font-family: $title-font;
+  font-size: 26px;
+  font-weight: 400px;
+  line-height: 1.145;
+  color: $white-text-color;
+  letter-spacing: 4%;
+  @media (min: width 768px) {
+    font-size: 22px;
+    line-height: 1.136;
+  }
+  @media (min: width 1280px) {
+    font-size: 38px;
+    line-height: 1.157;
+  }
+}
 .section__title {
   font-family: $title-font;
   color: $accent-color-dark;
@@ -52,21 +68,5 @@
   @media (min: width 1280px) {
     font-size: 30px;
     line-height: 1.145;
-  }
-}
-.main__label {
-  font-family: $title-font;
-  font-size: 26px;
-  font-weight: 400px;
-  line-height: 1.145;
-  color: $white-text-color;
-  letter-spacing: 4%;
-  @media (min: width 768px) {
-    font-size: 22px;
-    line-height: 1.136;
-  }
-  @media (min: width 1280px) {
-    font-size: 38px;
-    line-height: 1.157;
   }
 }
