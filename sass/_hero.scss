@@ -70,6 +70,7 @@
   width: 324px;
   top: -31px;
   left: 307px;
+  pointer-events: none;
 
   @media (min-width: 1280px) {
     width: 538px;
@@ -202,7 +203,7 @@
   right: 25px;
   background-color: inherit;
   border: none;
-  fill: $white-text-color;
+  stroke: $white-text-color;
 }
 .mobile__nav {
   font-size: 16px;
