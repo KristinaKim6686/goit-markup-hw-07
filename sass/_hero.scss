@@ -173,3 +173,45 @@
 .girl {
   z-index: 3;
 }
+// mobile menu
+.mobile-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: $background-mobile-menu;
+  min-width: 250px;
+  height: 100vh;
+  overflow-y: scroll;
+  font-weight: 500;
+}
+.mobile-menu.is-hidden {
+  display: none;
+  pointer-events: none;
+}
+.mobile__container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 20px;
+}
+
+.menu-close {
+  position: absolute;
+  top: 21px;
+  right: 25px;
+  background-color: inherit;
+  border: none;
+  fill: $white-text-color;
+}
+.mobile__nav {
+  font-size: 16px;
+  font-weight: 700;
+  color: $white-text-color;
+  & :not(:last-child) {
+    padding-bottom: 23px;
+  }
+}
+.mobile__button {
+  margin-bottom: 32px;
+}
