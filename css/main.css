@@ -498,6 +498,7 @@ nav :not(:last-child) {
   display: flex;
   padding-left: 20px;
   padding-bottom: 160px;
+  font-size: 8px;
 }
 
 @media (min-width: 768px) {
@@ -509,24 +510,41 @@ nav :not(:last-child) {
 @media (min-width: 1280px) {
   .hero-buttons {
     margin-bottom: 56px;
+    font-size: 14px;
   }
 }
 
 .round__button {
-  background-color: #ffffff;
+  stroke: #d41443;
+  margin-top: 7px;
   width: 18px;
   height: 18px;
-  border-radius: 25px;
-  border: none;
-  margin-top: 7px;
+  border-radius: 50%;
+  border-style: none;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.round__button:hover, .round__button:focus {
+  background-color: #ecebeb;
+  box-shadow: 0px 0px 0px 1px #d41443;
+  transform: scale(1.2);
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .girl {
   z-index: 3;
 }
 
+.girl:hover, .girl:focus {
+  transform: scale(1.1);
+}
+
 .mobile-menu {
   position: absolute;
+  z-index: 4;
   top: 0;
   right: 0;
   background-color: #e17992;
@@ -570,5 +588,39 @@ nav :not(:last-child) {
 
 .mobile__button {
   margin-bottom: 32px;
+}
+
+.buy__now {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-left: 30px;
+  margin-right: auto;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: bold;
+  color: #d41443;
+  border: none;
+  background: #ffffff;
+  border-radius: 22px;
+}
+
+.dark__button {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: 8px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  background: #d41443;
+  border-radius: 22px;
 }
 /*# sourceMappingURL=main.css.map */
