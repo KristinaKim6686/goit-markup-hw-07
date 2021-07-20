@@ -128,6 +128,7 @@ header .container {
 }
 
 nav {
+  z-index: 3;
   display: flex;
   justify-content: space-between;
   margin-right: auto;
@@ -145,8 +146,7 @@ nav :not(:last-child) {
   color: #d41443;
 }
 
-.nav__link :focus,
-.nav__link :hover {
+.nav__link:focus, .nav__link:hover {
   transform: scale(1.1);
   color: #d41443;
 }
@@ -180,6 +180,12 @@ nav :not(:last-child) {
 .navigation__buttons {
   display: flex;
   align-items: baseline;
+}
+
+@media (max-width: 768px) {
+  .buy__now {
+    display: none;
+  }
 }
 
 .main__title {
@@ -290,7 +296,7 @@ nav :not(:last-child) {
 
 .hero__section {
   background-color: #ffb8ca;
-  position: relative;
+  overflow: visible;
 }
 
 @media (max-width: 768px) {
@@ -308,17 +314,10 @@ nav :not(:last-child) {
   }
 }
 
-@media (min: width 768px) {
-  .hero__section {
-    background-image: url(../images/Ellipse.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-  }
-}
-
 .hero__container {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 
 .description__block {
@@ -369,19 +368,23 @@ nav :not(:last-child) {
   transform: scale(1.1);
 }
 
-.description {
-  display: flex;
-  margin-bottom: 28px;
+.banner__background {
+  position: absolute;
+  width: 324px;
+  top: -31px;
+  left: 307px;
 }
 
 @media (min-width: 1280px) {
-  .description {
-    margin-bottom: 45px;
+  .banner__background {
+    width: 538px;
+    left: 475px;
+    top: -52px;
   }
 }
 
 @media (max-width: 768px) {
-  .description {
+  .banner__background {
     display: none;
   }
 }
@@ -414,6 +417,10 @@ nav :not(:last-child) {
   }
 }
 
+.numbers__list li:focus, .numbers__list li:hover {
+  transform: scale(1.1);
+}
+
 .numbers__list {
   color: #ffffff;
   font-size: 8px;
@@ -427,9 +434,35 @@ nav :not(:last-child) {
   }
 }
 
+.description {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 28px;
+}
+
+@media (min-width: 1280px) {
+  .description {
+    margin-bottom: 45px;
+  }
+}
+
+@media (max-width: 768px) {
+  .description {
+    display: none;
+  }
+}
+
 .description__text {
-  width: 200px;
   color: #ffffff;
+  max-width: 114px;
+  font-size: 8px;
+}
+
+@media (min-width: 1280px) {
+  .description__text {
+    width: 200px;
+    font-size: 14px;
+  }
 }
 
 .main__label {
@@ -480,5 +513,9 @@ nav :not(:last-child) {
   border-radius: 25px;
   border: none;
   margin-top: 7px;
+}
+
+.girl {
+  z-index: 3;
 }
 /*# sourceMappingURL=main.css.map */

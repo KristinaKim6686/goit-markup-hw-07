@@ -1,6 +1,6 @@
 .hero__section {
   background-color: $background-hero;
-  position: relative;
+  overflow: visible;
 
   @media (max-width: 768px) {
     background-image: url(../images/icecream-mob-1x.png),
@@ -16,15 +16,19 @@
       background-image: url(../images/icecream-mob-2x.png);
     }
   }
-  @media (min: width 768px) {
-    background-image: url(../images/Ellipse.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-  }
+  // @media (min-width: 768px) {
+  //   background-image: url(../images/Ellipse.png);
+  //   background-size: 324px;
+
+  //   background-position: center bottom 32px;
+  //   transform: translate(y);
+  //   background-repeat: no-repeat;
+  // }
 }
 .hero__container {
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .description__block {
   display: flex;
@@ -62,18 +66,21 @@
   }
 }
 .banner__background {
-}
-.description {
-  display: flex;
-  margin-bottom: 28px;
+  position: absolute;
+  width: 324px;
+  top: -31px;
+  left: 307px;
 
   @media (min-width: 1280px) {
-    margin-bottom: 45px;
+    width: 538px;
+    left: 475px;
+    top: -52px;
   }
   @media (max-width: 768px) {
     display: none;
   }
 }
+
 .number {
   font-family: $title-font;
   font-size: 28px;
@@ -94,6 +101,10 @@
     background-size: 30px;
     padding-right: 20px;
   }
+  &:focus,
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 .numbers__list {
   color: $white-text-color;
@@ -104,9 +115,25 @@
     font-size: 14px;
   }
 }
+.description {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 28px;
+  @media (min-width: 1280px) {
+    margin-bottom: 45px;
+  }
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
 .description__text {
-  width: 200px;
   color: $white-text-color;
+  max-width: 114px;
+  font-size: 8px;
+  @media (min-width: 1280px) {
+    width: 200px;
+    font-size: 14px;
+  }
 }
 .main__label {
   padding-top: 137px;
@@ -134,6 +161,7 @@
     margin-bottom: 56px;
   }
 }
+
 .round__button {
   background-color: $white-text-color;
   width: 18px;
@@ -141,4 +169,7 @@
   border-radius: 25px;
   border: none;
   margin-top: 7px;
+}
+.girl {
+  z-index: 3;
 }
